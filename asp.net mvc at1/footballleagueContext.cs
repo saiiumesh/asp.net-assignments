@@ -10,6 +10,8 @@ namespace FootBallLeague.Models
     {
         public FootBallLeagueContext() : base("FootBallLeagueConnection")
         {
+        
+         Database.SetInitializer<FootBallLeagueContext>(new CreateDatabaseIfNotExists<FootBallLeagueContext>());    
 
         }
 
